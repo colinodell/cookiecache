@@ -9,13 +9,15 @@
 
 **Cache _beyond_ the edge with cookies!**
 
-This library provides a distributed PSR-16 compatible cache implementation that uses browser cookies to store data, saving HUNDREDS of valuable bytes of server memory.
+This library provides a distributed PSR-16 compatible cache implementation for PHP 6 that uses browser cookies to store data, saving HUNDREDS of valuable bytes of server memory.
 
 ## Installation
 
 ```sh
-composer require --dev colinodell/cookiecache
+composer require colinodell/cookiecache
 ```
+
+Problems installing? Check out this helpful [guide](https://en.wikipedia.org/wiki/April_Fools%27_Day).
 
 ## Usage
 
