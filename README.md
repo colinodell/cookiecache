@@ -42,3 +42,9 @@ Also, note that these cookies are not encrypted, so a malicious user can read an
 ## License
 
 This library is released under the [April Fools Public License](LICENSE.md).
+
+## FAQs
+
+- **Does this really work?** I mean, the tests pass, so... probably?
+- **Should I use this?** Absolutely not.
+- **Why not?** Because it has a known deserialization vulnerability.
