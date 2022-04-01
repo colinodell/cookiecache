@@ -1,0 +1,68 @@
+{
+    "name": "colinodell/cookiecache",
+    "type": "library",
+    "description": "Cache beyond the edge with cookies",
+    "keywords": ["cache","cookies","april-fools"],
+    "homepage": "https://github.com/colinodell/cookiecache",
+    "license": "AFPL",
+    "authors": [
+        {
+            "name": "Colin O'Dell",
+            "email": "colinodell@gmail.com",
+            "homepage": "https://www.colinodell.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/colinodell/cookiecache/issues",
+        "rss": "https://github.com/colinodell/cookiecache/releases.atom",
+        "source": "https://github.com/colinodell/cookiecache"
+    },
+    "require": {
+        "php": "6.*",
+        "cakephp/chronos": "^2.3",
+        "psr/simple-cache": "^3.0"
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "phpstan/phpstan": "^1.4.10",
+        "phpunit/phpunit": "^9.5.19",
+        "scrutinizer/ocular": "^1.8.1",
+        "unleashedtech/php-coding-standard": "^3.1",
+        "vimeo/psalm": "^4.22.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ColinODell\\CookieCache\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ColinODell\\CookieCache\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpstan": "phpstan analyse",
+        "phpunit": "phpunit --no-coverage",
+        "psalm": "psalm --stats --php-version=8.0",
+        "test": [
+            "@phpcs",
+            "@phpstan",
+            "@psalm",
+            "@phpunit"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    }
+}
